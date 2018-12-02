@@ -7,6 +7,7 @@ sudo apt-get install libv4l-dev libxvidcore-dev libx264-dev -y
 sudo apt-get install libjpeg-dev libpng-dev libtiff-dev gfortran openexr -y
 sudo apt-get install libtbb2 libtbb-dev libdc1394-22-dev -y
 sudo apt-get install python3-dev python3-numpy -y # OPTIONAL
+sudo apt-get install v4l-utils
 
 # wiringPi
 git clone git://git.drogon.net/wiringPi
