@@ -1,5 +1,8 @@
 #!/bin/dash
 # realsense (from source)
+cd ..
+sudo apt-get update
+supd apt-get upgrade
 sudo apt-get install libssl-dev libusb-1.0-0-dev
 sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev # Ubuntu 18
 git clone https://github.com/IntelRealSense/librealsense
@@ -15,5 +18,5 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /u
 sudo update-alternatives --set gcc "/usr/bin/gcc-5"
 mkdir build && cd build
 cmake .. -DBUILD_EXAMPLES=true
-sudo make uninstall && make clean && make -j`nproc` && sudo make install
+sudo make uninstall && sudo make clean && sudo make -j`nproc` && sudo make install
 
