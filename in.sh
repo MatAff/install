@@ -13,8 +13,10 @@ sudo apt-get install -y make-guile
 sudo apt-get install -y cmake
 sudo apt-get install -y xfce4 xfce4-goodies tightvncserver
 sudo apt-get install -y spyder3
-sudo apt-get install -y python 3.8
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
+sudo apt-get install -y python 3.8
+sudo apt-get install -y snapd snapd-xdg-open
+sudo snap install -y notepad-plus-plus
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
 
